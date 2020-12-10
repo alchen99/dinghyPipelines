@@ -1,15 +1,16 @@
 {
   "application": "dinghytest",
-  "deleteStalePipelines": false,
-  "globals": {
-    "application": "dinghytest"
-  },
-
-  "stages": [
+  "pipelines": [
     {
-      "name": "Wait 10",
-      "type": "wait",
-      "waitTime": 10
+      "application": "dinghytest",
+      "name": "Wait-5",
+      "stages": [
+        {
+          "name": "Wait 5",
+          "type": "wait",
+          "waitTime": 5
+        }
+      ]
     }
   ]
 }
