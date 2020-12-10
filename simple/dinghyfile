@@ -5,17 +5,11 @@
     "application": "dinghytest"
   },
 
-  "pipelines": [
+  "stages": [
     {
-      "application": "helloworldapp",
-      "name": "my-pipeline-name",
-      "stages": [
-        {
-          "name": "one",
-          "type": "wait",
-          "waitTime": 10
-        }
-      ]
+      "name": "Wait 10",
+      "type": "wait",
+      "waitTime": 10
     }
   ]
 }
